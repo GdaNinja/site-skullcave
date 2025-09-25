@@ -1,0 +1,68 @@
+#capa,
+#protagonista,
+#inimigos,
+#imagens,
+#disponivel {
+    background-color: #0F0F0C;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#artistas,
+#historia {
+    padding: 20px;
+    background-color: #F2F2EB;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#capa img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+#disponivel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#disponivel h1 {
+    font-size: 12rem;
+    font-family: "Jolly Lodger", system-ui;
+    color: #DA0808;
+}
+
+#disponivel h3 {
+    font-size: 3rem;
+    color: #CCCBC6;
+    margin-bottom: 50px;
+    font-family: 'Inknut Antiqua', serif;
+
+}
+
+#disponivel img {
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+#apresentacao {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+}
+.boxInfo {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+}

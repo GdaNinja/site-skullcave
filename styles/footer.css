@@ -1,0 +1,63 @@
+#rodape {
+    background-color: #000;
+    text-align: center;
+    padding: 40px 20px;
+    color: #bbb;
+  }
+  
+  /* Títulos */
+  #rodape .titulo {
+    font-size: 2rem;
+    color: #e63946; /* vermelho */
+    margin-bottom: 10px;
+    animation: pulse 1.5s infinite; /* animação chamativa */
+  }
+  
+  #rodape h4 {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  /* Container da classificação + botões */
+  #rodape .classe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px; /* espaço entre a classificação e os ícones */
+    margin: 20px 0;
+    flex-wrap: wrap; /* quebra linha se for tela pequena */
+  }
+  
+  /* Imagem da classificação indicativa */
+  #rodape .classificacao-indicativa {
+    height: 50px;
+  }
+  
+  /* Botões sociais */
+  #rodape .botoes {
+    display: flex;
+    gap: 15px;
+  }
+  
+  #rodape button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  #rodape button:hover {
+    transform: scale(1.2);
+  }
+  
+  #rodape .social-medias {
+    height: 35px;
+  }
+  
+  /* Copyright */
+  #rodape p {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #888;
+  }

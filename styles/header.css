@@ -1,0 +1,37 @@
+#cabecalho {
+    position: fixed;
+    width: 100%;
+}
+ 
+.menu {
+    background-color: #0F0F0C;
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    gap: 400px;
+}
+ 
+.menu ul {
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+ 
+.menu li {
+    display: inline-block;
+    color: #DFDFDC;
+    font-family: "Combo", system-ui;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+ 
+.menu img {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    width: 200px;
+ 
+}
