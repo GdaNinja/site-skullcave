@@ -7,9 +7,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+    margin-bottom: 100px; /* espaço para o cabeçalho fixo */
+    z-index: 3;
+}
 .title-section {
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
+    padding-top: 20px;
     margin-bottom: 20px;
     font-family: 'Inknut Antiqua', serif;
     color: #CCCBC6;

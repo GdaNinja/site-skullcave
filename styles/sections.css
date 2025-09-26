@@ -1,10 +1,15 @@
 #capa,
 #protagonista,
-#inimigos,
-#imagens,
-#disponivel {
+#disponivel,
+#imagens {
     background-color: #0F0F0C;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #artistas,
@@ -12,21 +17,17 @@
     padding: 20px;
     background-color: #F2F2EB;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#capa img {
-    width: 100%;
-    height: auto;
-    margin: 0;
-}
-
-#disponivel {
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 20px;
     margin: 0 auto;
     text-align: center;
+}
+#capa img {
+    width: 100%;
+    height: 1000px;
+    margin: 0;
 }
 
 #disponivel h1 {
@@ -58,11 +59,125 @@
     text-align: center;
     background-color: black;
 }
+
 .boxInfo {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    margin: 0 20px;
+}
+
+#apresentacao .boxInfo img {
+    width: 60%;
+}
+
+#apresentacao .info-content,
+#protagonista .info-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #CCCBC6;
+    margin: 20px 20px;
+    font-family: 'Jersey 25', serif;
+    width: 50%;
+    text-align: justify;
+}
+
+#protagonista .boxInfo img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+#artistas .title-section,
+#historia .title-section {
+    color: black;
+}
+
+#artistas .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
     margin: 0 auto;
     text-align: center;
-    background-color: black;
+    width: 50%;
+}
+
+#artistas .info-content {
+    color: black;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin: 20px 20px;
+    font-family: 'Jersey 25', serif;
+}
+
+#artistas .boxInfo img {
+    width: 40%;
+    border-radius: 35%;
+}
+#inimigos{
+    background-color: #0F0F0C;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px; 
+}
+#inimigos #carouselExampleFade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+#inimigos h5 {
+    font-size: 3rem;
+    color: #CCCBC6;
+    font-family: 'Jolly Lodger', system-ui;
+}
+#inimigos .info-content {
+    font-size: 1.5rem;
+    color: #CCCBC6;
+    margin: 10px 20px;
+    font-family: 'Jersey 25', serif;
+    text-align: center;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+}
+#inimigos .carousel-item img {
+    max-height: 800px;
+}
+#historia .info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    
+}
+#historia .info-content {
+    color: black;
+    font-size: 2rem;
+    text-align: justify;
+    margin: 20px 20px;
+    font-family: 'Jersey 25', serif;
+    width: 100%;
+}
+#imagens #carouselExampleIndicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+#imagens .carousel-item img {
+    max-height: 700px;
+    object-fit: cover;
 }

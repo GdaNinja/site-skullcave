@@ -11,27 +11,35 @@
     gap: 400px;
 }
  
-.menu ul {
+.menu .menu-list {
     margin: 10px 0;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
+    gap: 200px;
 }
  
 .menu li {
     display: inline-block;
     color: #DFDFDC;
-    font-family: "Combo", system-ui;
+    font-family: 'Jersey 25', serif;
     font-weight: bold;
-    font-size: 1.4rem;
+    font-size: 2rem;
 }
  
 .menu img {
-    margin: 0 20px;
+    margin: 10px 20px;
     display: flex;
     align-items: center;
     width: 200px;
  
+}
+.menu a {
+    text-decoration: none;
+    color: #DFDFDC;
+}
+.menu a:hover {
+    color: #ff0015;
+    transition: 0.3s;
 }
