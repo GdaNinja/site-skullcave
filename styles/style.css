@@ -110,7 +110,11 @@ header {
 
 /* ========== LOGO SEÇÃO DISPONÍVEL ========== */
 .logo{
+    width: 90%;
     animation: pulseGlow 4s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 #disponivel img {
     filter: drop-shadow(0 0 20px #DA0808) drop-shadow(0 0 40px #DA0808) drop-shadow(0 0 60px rgba(218, 8, 8, 0.4));
