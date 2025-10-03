@@ -122,3 +122,21 @@ header {
 }
 
 
+@media (max-width: 1920px) {
+  .menu {
+    gap: 150px;
+  }
+
+  .menu .menu-list {
+    gap: 150px;
+  }
+
+  #disponivel h1 {
+    font-size: 8rem;
+  }
+
+  #disponivel img {
+    width: 300px;
+  }
+}
+
