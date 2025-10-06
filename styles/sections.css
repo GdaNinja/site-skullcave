@@ -1,4 +1,4 @@
-#capa{
+#capa {
     background-color: #0F0F0C;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -29,7 +29,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
     margin: 0 auto;
     text-align: center;
 }
@@ -52,7 +51,6 @@
     color: #CCCBC6;
     margin-bottom: 50px;
     font-family: 'Inknut Antiqua', serif;
-
 }
 
 #disponivel img {
@@ -74,12 +72,15 @@
 .boxInfo {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
     margin: 0 20px;
+    gap: 20px;
 }
 
 #apresentacao .boxInfo img {
     width: 60%;
+    object-fit: cover;
 }
 
 #apresentacao .info-content,
@@ -154,8 +155,10 @@
 
 #inimigos .info-content {
     font-size: 1.3rem;
+    max-width: 60%;
+    display: flex;
     color: #CCCBC6;
-    margin: 10px 20px;
+    margin: 10px auto;
     font-family: 'Jersey 25', serif;
     text-align: center;
     text-shadow:
@@ -178,7 +181,6 @@
     margin: 0 auto;
     text-align: center;
     width: 80%;
-
 }
 
 #historia .info-content {
@@ -198,8 +200,204 @@
     margin: auto;
 }
 
-
 #imagens .carousel-item img {
     max-height: 75vh;
     object-fit: contain;
+}
+
+/* ========= RESPONSIVIDADE ========= */
+@media (max-width: 1024px) {
+    .title-section {
+        font-size: 4rem !important;
+    }
+
+    #disponivel h1 {
+        font-size: 8rem;
+    }
+
+    #disponivel h3 {
+        font-size: 2.5rem;
+    }
+
+    #disponivel img {
+        width: 300px;
+    }
+
+    .boxInfo {
+        flex-direction: column;
+        margin: 0 10px;
+    }
+
+    #apresentacao .boxInfo img,
+    #protagonista .boxInfo img {
+        width: 60%;
+    }
+
+    #apresentacao .info-content,
+    #protagonista .info-content {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    #artistas .info {
+        width: 80%;
+    }
+
+    #artistas .boxInfo img {
+        width: 60%;
+    }
+
+    #artistas .info-content {
+        font-size: 1.3rem;
+    }
+
+    #historia .info {
+        width: 90%;
+    }
+
+    #historia .info-content {
+        font-size: 1.8rem;
+    }
+
+    #inimigos h5 {
+        font-size: 2.5rem;
+    }
+
+    #inimigos .info-content {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-section {
+        font-size: 3rem !important;
+        padding-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #disponivel h1 {
+        font-size: 6rem;
+    }
+
+    #disponivel h3 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    #disponivel img {
+        width: 250px;
+    }
+
+    #apresentacao .info-content,
+    #protagonista .info-content {
+        font-size: 1.5rem;
+        margin: 15px 10px;
+    }
+
+    #apresentacao .boxInfo img,
+    #protagonista .boxInfo img {
+        width: 90%;
+    }
+
+    #artistas .info {
+        width: 90%;
+    }
+
+    #artistas .info-content {
+        font-size: 1.2rem;
+        margin: 15px 10px;
+    }
+
+    #artistas .boxInfo img {
+        width: 70%;
+    }
+
+    #historia .info-content {
+        font-size: 1.5rem;
+        margin: 15px 10px;
+    }
+
+    #inimigos h5 {
+        font-size: 2rem;
+    }
+
+    #inimigos .info-content {
+        font-size: 1rem;
+        margin: 10px 15px;
+    }
+
+    #inimigos .carousel-item img,
+    #imagens .carousel-item img {
+        max-height: 60vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .title-section {
+        font-size: 2.5rem !important;
+        padding-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #disponivel h1 {
+        font-size: 4rem;
+    }
+
+    #disponivel h3 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    #disponivel img {
+        width: 200px;
+    }
+
+    .boxInfo {
+        padding: 10px;
+        margin: 0 5px;
+    }
+
+    #apresentacao .info-content,
+    #protagonista .info-content {
+        font-size: 1.2rem;
+        margin: 10px 5px;
+    }
+
+    #artistas .info {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #artistas .info-content {
+        font-size: 1rem;
+        margin: 10px 5px;
+    }
+
+    #artistas .boxInfo img {
+        width: 80%;
+    }
+
+    #historia .info {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #historia .info-content {
+        font-size: 1.2rem;
+        margin: 10px 5px;
+    }
+
+    #inimigos h5 {
+        font-size: 1.8rem;
+    }
+
+    #inimigos .info-content {
+        font-size: 0.9rem;
+        margin: 8px 10px;
+    }
+
+    #inimigos .carousel-item img,
+    #imagens .carousel-item img {
+        max-height: 50vh;
+    }
 }

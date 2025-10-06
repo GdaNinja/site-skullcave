@@ -1,92 +1,212 @@
 #rodape {
-  background-color: #000;
-  text-align: center;
-  padding: 10px 10px;
-  color: #bbb;
+    background-color: #000;
+    text-align: center;
+    padding: 10px 10px;
+    color: #bbb;
 }
 
-/* Títulos */
 #rodape .titulo {
-  font-family: 'Inknut Antiqua', serif;
-  font-size: 5rem;
-  margin-bottom: 5px;
-  animation: pulse 1.5s infinite;
-  /* animação chamativa */
-  font-weight: bold;
-  margin-top: 20px;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 5rem;
+    margin-bottom: 5px;
+    animation: pulse 1.5s infinite;
+    font-weight: bold;
+    margin-top: 20px;
 }
 
 #rodape h4 {
-  font-size: 4rem;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  font-family: 'Jersey 25', serif;
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: 'Jersey 25', serif;
 }
 
-/* Container da classificação + botões */
 #rodape .redes-sociais {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 25px;
-  /* espaço entre a classificação e os ícones */
-  margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 20px;
+    padding: 0 50px;
 }
 
-/* Imagem da classificação indicativa */
 #rodape .classificacao-indicativa {
-  height: 150px;
-  width: 150px;
-  margin-left: 80px;
-  border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    margin-left: 80px;
+    border-radius: 10px;
 }
 
-/* Botões sociais */
 #rodape .botoes {
-  display: flex;
-  gap: 15px;
-  width: 300px;
+    display: flex;
+    gap: 15px;
+    width: 300px;
+    justify-content: flex-end;
+    margin-right: 80px;
 }
 
 #rodape .button-whatsapp,
 #rodape .button-facebook,
 #rodape .button-instagram {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  background: #fff;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
-  border: none;
-  border-radius: 40px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
 
 #rodape .button-whatsapp {
-  color: #25D366;
-  /* verde do WhatsApp */
+    color: #25D366;
 }
 
 #rodape .button-facebook {
-  color: #3b5998;
-  /* azul do Facebook */
+    color: #3b5998;
 }
 
 #rodape .button-instagram {
-  color: #E1306C;
-  /* rosa do Instagram */
-}
-#rodape .button-facebook:hover,.button-instagram:hover,.button-whatsapp:hover{
-  transform: scale(1.2);
+    color: #E1306C;
 }
 
-/* Copyright */
+#rodape .button-facebook:hover,
+#rodape .button-instagram:hover,
+#rodape .button-whatsapp:hover {
+    transform: scale(1.2);
+}
+
 #rodape p {
-  font-size: 20px;
-  margin-top: 15px;
-  color: #aaa;
+    font-size: 20px;
+    margin-top: 15px;
+    color: #aaa;
+}
 
+/* ========= RESPONSIVIDADE ========= */
+@media (max-width: 1024px) {
+    #rodape .titulo {
+        font-size: 4rem;
+    }
+
+    #rodape h4 {
+        font-size: 3rem;
+    }
+
+    #rodape .redes-sociais {
+        padding: 0 30px;
+    }
+
+    #rodape .classificacao-indicativa {
+        height: 120px;
+        width: 120px;
+        margin-left: 40px;
+    }
+
+    #rodape .botoes {
+        width: 250px;
+        margin-right: 40px;
+    }
+
+    #rodape .button-whatsapp,
+    #rodape .button-facebook,
+    #rodape .button-instagram {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+    }
+
+    #rodape p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    #rodape .titulo {
+        font-size: 3rem;
+        margin-top: 15px;
+    }
+
+    #rodape h4 {
+        font-size: 2.5rem;
+        margin-top: 15px;
+    }
+
+    #rodape .redes-sociais {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    #rodape .classificacao-indicativa {
+        height: 100px;
+        width: 100px;
+        margin-left: 0;
+    }
+
+    #rodape .botoes {
+        width: auto;
+        margin-right: 0;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #rodape .button-whatsapp,
+    #rodape .button-facebook,
+    #rodape .button-instagram {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    #rodape p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #rodape {
+        padding: 10px 5px;
+    }
+
+    #rodape .titulo {
+        font-size: 2.5rem;
+        margin-top: 10px;
+    }
+
+    #rodape h4 {
+        font-size: 2rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #rodape .redes-sociais {
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    #rodape .classificacao-indicativa {
+        height: 80px;
+        width: 80px;
+    }
+
+    #rodape .botoes {
+        gap: 15px;
+    }
+
+    #rodape .button-whatsapp,
+    #rodape .button-facebook,
+    #rodape .button-instagram {
+        width: 45px;
+        height: 45px;
+        font-size: 22px;
+    }
+
+    #rodape p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
 }

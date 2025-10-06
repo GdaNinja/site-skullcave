@@ -7,13 +7,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-.no-scroll{
+
+.no-scroll {
     overflow: hidden;
     height: 100vh;
 }
+
 header {
     margin-bottom: 100px;
-    /* espaço para o cabeçalho fixo */
     z-index: 3;
 }
 
@@ -26,7 +27,7 @@ header {
     color: #CCCBC6;
 }
 
-
+/* ========== LOADING SCREEN ========== */
 #loading-screen {
     position: fixed;
     top: 0;
@@ -44,17 +45,18 @@ header {
 #loading-screen .logo-container {
     position: relative;
     animation: pulseGlow 2s ease-in-out infinite;
+    padding: 20px;
 }
 
 #loading-screen img {
     width: 1000px;
+    max-width: 90vw;
     height: auto;
     filter: drop-shadow(0 0 30px #DA0808) drop-shadow(0 0 60px #DA0808) drop-shadow(0 0 90px rgba(218, 8, 8, 0.5));
     animation: glitchLogo 3s infinite;
 }
 
 @keyframes glitchLogo {
-
     0%,
     90%,
     100% {
@@ -74,7 +76,6 @@ header {
 }
 
 @keyframes pulseGlow {
-
     0%,
     100% {
         transform: scale(1);
@@ -107,36 +108,110 @@ header {
     transform: scale(1.2);
 }
 
-
 /* ========== LOGO SEÇÃO DISPONÍVEL ========== */
-.logo{
+.logo {
     width: 90%;
     animation: pulseGlow 4s ease-in-out infinite;
     display: flex;
     justify-content: center;
     margin: 0 auto;
 }
+
 #disponivel img {
     filter: drop-shadow(0 0 20px #DA0808) drop-shadow(0 0 40px #DA0808) drop-shadow(0 0 60px rgba(218, 8, 8, 0.4));
     animation: glitchLogo 5s infinite;
 }
 
+/* ========== RESPONSIVIDADE DA ANIMAÇÃO INICIAL ========== */
+@media (max-width: 1024px) {
+    #loading-screen img {
+        width: 700px;
+        max-width: 85vw;
+    }
 
-@media (max-width: 1920px) {
-  .menu {
-    gap: 150px;
-  }
-
-  .menu .menu-list {
-    gap: 150px;
-  }
-
-  #disponivel h1 {
-    font-size: 8rem;
-  }
-
-  #disponivel img {
-    width: 300px;
-  }
+    #loading-screen .logo-container {
+        padding: 15px;
+    }
 }
 
+@media (max-width: 768px) {
+    #loading-screen img {
+        width: 500px;
+        max-width: 80vw;
+        filter: drop-shadow(0 0 20px #DA0808) drop-shadow(0 0 40px #DA0808) drop-shadow(0 0 60px rgba(218, 8, 8, 0.5));
+    }
+
+    #loading-screen .logo-container {
+        padding: 10px;
+    }
+
+    @keyframes glitchLogo {
+        0%,
+        90%,
+        100% {
+            transform: translate(0, 0) scale(1);
+            filter: drop-shadow(0 0 20px #DA0808) drop-shadow(0 0 40px #DA0808);
+        }
+
+        92% {
+            transform: translate(-2px, 1px) scale(1.01);
+            filter: drop-shadow(3px 0 8px #ff0000) drop-shadow(-3px 0 8px #00ffff);
+        }
+
+        94% {
+            transform: translate(1px, -1px) scale(0.99);
+            filter: drop-shadow(-2px 0 8px #ff0000) drop-shadow(2px 0 8px #00ff00);
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #loading-screen img {
+        width: 350px;
+        max-width: 90vw;
+        filter: drop-shadow(0 0 15px #DA0808) drop-shadow(0 0 30px #DA0808) drop-shadow(0 0 45px rgba(218, 8, 8, 0.4));
+    }
+
+    #loading-screen .logo-container {
+        padding: 10px;
+    }
+
+    @keyframes glitchLogo {
+        0%,
+        90%,
+        100% {
+            transform: translate(0, 0) scale(1);
+            filter: drop-shadow(0 0 15px #DA0808) drop-shadow(0 0 30px #DA0808);
+        }
+
+        92% {
+            transform: translate(-1px, 1px) scale(1.005);
+            filter: drop-shadow(2px 0 5px #ff0000) drop-shadow(-2px 0 5px #00ffff);
+        }
+
+        94% {
+            transform: translate(1px, -1px) scale(0.995);
+            filter: drop-shadow(-1px 0 5px #ff0000) drop-shadow(1px 0 5px #00ff00);
+        }
+    }
+
+    @keyframes pulseGlow {
+        0%,
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        50% {
+            transform: scale(1.03);
+            opacity: 0.92;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    #loading-screen img {
+        width: 280px;
+        max-width: 85vw;
+    }
+}
