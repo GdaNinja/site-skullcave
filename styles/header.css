@@ -42,7 +42,7 @@
     font-size: 2rem;
 }
 
-.menu .menu-list > img {
+.menu .menu-list>img {
     margin: 10px 20px;
     display: flex;
     align-items: center;
@@ -121,6 +121,23 @@
 
 .mobile_menu-list .menu_item a:hover {
     color: #ff0015;
+}
+
+@media(max-width:1920px) {
+    .menu {
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    .menu .menu-list {
+    margin: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    list-style: none;
+}
+
 }
 
 /* ========= RESPONSIVIDADE ========= */
